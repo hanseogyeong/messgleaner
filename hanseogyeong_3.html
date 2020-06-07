@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+<title>hanseogyeong</title>
+<style>
+body{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+.container{
+  display: grid;
+  width: auto; /*rem은 최상위 요소(보통은 html 태그)에서 지정된 size 의 값에 배수를 하는 것*/
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  grid-template-columns: repeat(12,1fr);/*12개로 나누는데, 그 크기는 비율에 맞게(1fr x 12 임)*/
+  grid-auto-rows: minmax(5rem,auto);/*minmax(5rem, auto)의 의미는 최소한 5rem, 최대는 자동으로(auto) 늘어나게*/
+  grid-gap: 10px;/*Grid 셀 사이의 간격*/
+  font-family:'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  font-size: 0.9rem;
+  letter-spacing :0.02rem;
+  word-break: keep-all;
+  line-height: 1.3rem;
+  word-spacing: -0.1rem;
+
+  /*grid-template-areas:
+		"header header header header header header header header header header header header"*/
+}
+.hh, .hhh{
+  display: grid;
+  position: fixed;
+}
+ul {
+  list-style-type:none;
+  padding: 0;
+}
+li{
+  float:left;
+  margin-left: 1.5rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container .col-2 {
+  grid-column-end: span 2;
+}
+.container .col-3 {
+  grid-column-end: span 3;
+}
+.container .col-4 {
+  grid-column-end: span 4;
+}
+.container .col-6 {
+  grid-column-end: span 6;
+}
+/*.container .row-2 {
+  grid-row-end: span 2;
+}
+.container .row-3 {
+  grid-row-end: span 3;
+}
+.container .row-4 {
+  grid-row-end: span 4;
+}
+.container .row-5 {
+  grid-row-end: span 5;
+}*/
+</style>
+</head>
+<body>
+  <div class="container">
+
+  <div class="col-4">
+    <div class="hh" style="font-size: 0.95rem;">
+      <ul>
+        <li style="margin-left:0;"><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Portfolio</a></li>
+      </ul>
+    </div>
+</div>
+
+  <div class="col-4"><a href=""><img src="han.svg"/></a></div>
+
+  <div class="col-4">
+    <div class="hhh" style="font-size: 0.8rem;
+    right:3rem;">이삭줍는 한이삭의 이삭창고<br>@messgleaner</div>
+
+  </div>
+
+  <!-- .col-2 -->
+  <div class="col-3"> </div>
+  <div class="col-3"> </div>
+  <div class="col-3"> </div>
+  <div class="col-3"> </div>
+  <!-- .col-3 -->
+  <div class="col-4">
+    <a href="">
+      <img src="12.gif" style="width: 519px; height:292px;">
+    </a>
+  </div>
+  <div class="col-4">
+    <a href="">
+      <img src="kkk.gif" style="width: 519px; height:292px;">
+    </a>
+  </div>
+  <div class="col-4">
+  <a href="">
+    <img src="23.gif" style="width: 519px; height:292px;">
+  </a>
+    </div>
+  <!-- .col-4 -->
+  <div class="col-6"> </div>
+  <div class="col-6"> </div>
+  <!-- .col-5 -->
+  <div class="col-"> </div>
+  <div class="col-"> </div>
+  <div class="col-"> </div>
+</div>
+</body>
+</html>
